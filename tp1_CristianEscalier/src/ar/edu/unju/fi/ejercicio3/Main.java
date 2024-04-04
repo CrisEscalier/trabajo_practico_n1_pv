@@ -17,7 +17,7 @@ public class Main {
 			System.out.println("El triple de " + num + " es: " + num*3);
 		else
 			System.out.println("El doble de " + num + " es: " + num*2);
-		
+		sc.close();
 
 	}
 
