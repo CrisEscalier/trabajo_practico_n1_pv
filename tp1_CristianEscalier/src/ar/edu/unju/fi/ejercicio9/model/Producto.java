@@ -7,13 +7,10 @@ public class Producto {
 	private double precio;
 	private int descuento;
 	
-	
-
 	public Producto() {
 	}
 
 	public Producto(String nombre, int codigo, double precio, int descuento) {
-		super();
 		this.nombre = nombre;
 		this.codigo = codigo;
 		this.precio = precio;
@@ -61,6 +58,9 @@ public class Producto {
 		return this.getPrecio() - this.getPrecio() * this.getDescuento() / 100.00d;
 	}
 
+	/**
+	 * Metodo que muestra los datos del producto
+	 */
 	public void mostrarDatos() {
 		System.out.println("\nProducto: " + this.getNombre());
 		System.out.println("Codigo: " + this.getCodigo());
