@@ -77,6 +77,7 @@ public class Persona {
 		mes = this.getFechaNacimiento().getMonthValue();
 		dia = this.getFechaNacimiento().getDayOfMonth();
 		System.out.println("\nNombre: " + this.getNombre());
+		System.out.println("Provincia: " + this.getProvincia());
 		System.out.println("DNI: " + this.getDni());
 		System.out.println("Fecha de Nacimiento: " + dia + "/" + mes + "/" + anio);
 		System.out.println("Edad: " + calcularEdad());

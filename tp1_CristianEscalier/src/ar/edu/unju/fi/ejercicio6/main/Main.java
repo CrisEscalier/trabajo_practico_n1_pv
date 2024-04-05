@@ -7,30 +7,18 @@ import ar.edu.unju.fi.ejercicio6.model.Persona;
 
 public class Main {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		/*
-		 * Persona persona1 = new Persona(); LocalDate fechaNacimientoPersona1 =
-		 * LocalDate.of(1998, 11,14); persona1.setDni(41609462);
-		 * persona1.setNombre("Cristian Escalier");
-		 * persona1.setFechaNacimiento(fechaNacimientoPersona1);
-		 * persona1.setProvincia("Jujuy"); persona1.mostrarDatos(); LocalDate
-		 * fechaNacimientoPersona2 = LocalDate.of(1995, 4, 23); Persona persona2 = new
-		 * Persona(12342,"Carlos Sagas",fechaNacimientoPersona2,"Salta");
-		 * persona2.mostrarDatos(); LocalDate fechaNacimientoPersona3 =
-		 * LocalDate.of(2010, 1, 1); Persona persona3 = new
-		 * Persona(11233,"Maria Sanchez",fechaNacimientoPersona3);
-		 * persona3.mostrarDatos();
-		 */
 
 		Scanner sc = new Scanner(System.in);
 
 		int dni, anio, mes, dia;
-		String nombre, provincia;
+		String nombre, provincia,vacio;
 		LocalDate fechaNacimiento;
 
 		System.out.println("Ingrese los datos de la primera persona: ");
 		System.out.print("Nombre > ");
-		nombre = sc.next();
+		nombre = sc.nextLine();
 		System.out.print("DNI > ");
 		dni = sc.nextInt();
 		System.out.println("Fecha de Naciemiento: ");
@@ -41,7 +29,8 @@ public class Main {
 		System.out.print("Dia > ");
 		dia = sc.nextInt();
 		System.out.print("Provincia > ");
-		provincia = sc.next();
+		vacio = sc.nextLine();
+		provincia = sc.nextLine();
 		fechaNacimiento = LocalDate.of(anio, mes, dia);
 		Persona persona1 = new Persona();
 
@@ -49,10 +38,10 @@ public class Main {
 		persona1.setNombre(nombre);
 		persona1.setFechaNacimiento(fechaNacimiento);
 		persona1.setProvincia(provincia);
-
+		
 		System.out.println("Ingrese los datos de la segunda persona: ");
-		System.out.print("Nombre > ");
-		nombre = sc.next();
+		System.out.print("Nombre > ");		
+		nombre = sc.nextLine();
 		System.out.print("DNI > ");
 		dni = sc.nextInt();
 		System.out.println("Fecha de Naciemiento: ");
@@ -63,13 +52,14 @@ public class Main {
 		System.out.print("Dia > ");
 		dia = sc.nextInt();
 		System.out.print("Provincia > ");
-		provincia = sc.next();
+		vacio = sc.nextLine();
+		provincia = sc.nextLine();
 		fechaNacimiento = LocalDate.of(anio, mes, dia);
 		Persona persona2 = new Persona(dni, nombre, fechaNacimiento, provincia);
 
 		System.out.println("Ingrese los datos de la segunda persona: ");
 		System.out.print("Nombre > ");
-		nombre = sc.next();
+		nombre = sc.nextLine();
 		System.out.print("DNI > ");
 		dni = sc.nextInt();
 		System.out.println("Fecha de Naciemiento: ");
@@ -79,8 +69,6 @@ public class Main {
 		mes = sc.nextInt();
 		System.out.print("Dia > ");
 		dia = sc.nextInt();
-		System.out.print("Provincia > ");
-		provincia = sc.next();
 		fechaNacimiento = LocalDate.of(anio, mes, dia);
 		Persona persona3 = new Persona(dni, nombre, fechaNacimiento);
 
