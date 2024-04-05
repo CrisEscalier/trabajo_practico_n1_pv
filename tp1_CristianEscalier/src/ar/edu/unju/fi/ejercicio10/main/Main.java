@@ -20,10 +20,12 @@ public class Main {
 
 		System.out.println("Bienvenido a la pizzeria!!");
 		do {
+
 			do {
 				System.out.println("Ingrese el diametro de la pizza 20, 30 o 40: ");
 				diametro = sc.nextInt();
 			} while (diametro != 20 && diametro != 30 && diametro != 40);
+
 			System.out.print("LLeva ingredientes especiales? si/no: ");
 			resp = sc.next();
 			ingredientes = resp.equalsIgnoreCase("si");
@@ -38,13 +40,13 @@ public class Main {
 			cont++;
 		} while (cont < 3);
 
-		for(int i=1;i<=cont;i++) {
+		for (int i = 1; i <= cont; i++) {
 			System.out.println("\n** Pizza " + i + " **");
-			if(i==1)
+			if (i == 1)
 				pizza1.mostrarDatos();
-			if(i==2)
+			if (i == 2)
 				pizza2.mostrarDatos();
-			if(i==3)
+			if (i == 3)
 				pizza3.mostrarDatos();
 		}
 

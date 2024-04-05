@@ -99,7 +99,6 @@ public class Pizza {
 		System.out.println("Ingredientes especiales = " + this.isIngredientesEspeciales());
 		System.out.println("Precio Pizza = " + this.getPrecio() + "$");
 		System.out.println("Area de la pizza = " + this.getArea());
-		
 	}
 
 }
